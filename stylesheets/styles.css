@@ -6394,4 +6394,16 @@ footer p {
   line-height: 1.2rem;
 }
 
+.conference-logo-section {
+  color: #272a31;
+}
+.conference-logo-section .section-header {
+  color: inherit;
+}
+.conference-logo-section > p {
+  font-size: 0.9rem;
+  text-align: center;
+  padding: 0 12px 0 12px;
+}
+
 /*# sourceMappingURL=styles.css.map */
