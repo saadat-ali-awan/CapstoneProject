@@ -6373,4 +6373,25 @@ header > h1 {
   padding: 0 12px 12px 12px;
 }
 
+footer {
+  display: flex;
+}
+footer figure {
+  flex: 0.8;
+  margin: 0;
+  padding: 0.5rem 3rem 0.5rem 3rem;
+}
+footer figure img {
+  width: 100%;
+}
+footer p {
+  color: rgba(39, 42, 49, 0.8);
+  flex: 1.2;
+  font-size: 12px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  line-height: 1.2rem;
+}
+
 /*# sourceMappingURL=styles.css.map */

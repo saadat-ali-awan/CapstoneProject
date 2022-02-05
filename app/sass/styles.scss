@@ -310,3 +310,27 @@ header {
     }
   }
 }
+
+footer {
+  display: flex;
+
+  figure {
+    flex: 0.8;
+    margin: 0;
+    padding: 0.5rem 3rem 0.5rem 3rem;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  p {
+    color: rgba($primary-color, 0.8);
+    flex: 1.2;
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    line-height: 1.2rem;
+  }
+}
