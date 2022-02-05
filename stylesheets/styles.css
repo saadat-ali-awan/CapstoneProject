@@ -6287,4 +6287,70 @@ header > h1 {
   color: #fff;
 }
 
+.speakers {
+  display: flex;
+  flex-direction: column;
+  color: #272a31;
+  background-color: #fff;
+}
+.speakers .section-header {
+  color: inherit;
+}
+.speakers .section-header h3 {
+  color: inherit;
+  text-align: center;
+}
+.speakers .speaker-card {
+  display: flex;
+  flex-direction: row;
+  color: inherit;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+.speakers .speaker-card .speaker-image {
+  align-self: stretch;
+  padding-left: 1rem;
+  padding-top: 1rem;
+  background-image: url("../images/chess-bg.png");
+  background-position: left top;
+  background-repeat: no-repeat;
+  background-size: 40%;
+}
+.speakers .speaker-card .speaker-image img {
+  min-width: 15vw;
+}
+.speakers .speaker-card .speaker-card-details {
+  margin-left: 14px;
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+}
+.speakers .speaker-card .speaker-card-details h4 {
+  margin: 0;
+  margin-bottom: 4px;
+  color: inherit;
+}
+.speakers .speaker-card .speaker-card-details .underline-speakers {
+  height: 1px;
+  background-color: #d3d3d3;
+  width: 24px;
+}
+.speakers .speaker-card .speaker-card-details .speker-qualifications {
+  margin-top: 0;
+  color: #ec5242;
+  font-size: 0.7rem;
+}
+.speakers .speaker-card .speaker-card-details .speaker-desc {
+  color: inherit;
+  margin-bottom: 0;
+  font-size: 0.7rem;
+  align-self: flex-end;
+}
+.speakers #load-more {
+  padding: 8px;
+  color: #272a31;
+  background-color: rgba(255, 255, 255, 0);
+  border: 1px solid #d3d3d3;
+}
+
 /*# sourceMappingURL=styles.css.map */

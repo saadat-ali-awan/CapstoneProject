@@ -210,3 +210,80 @@ header {
     }
   }
 }
+
+.speakers {
+  display: flex;
+  flex-direction: column;
+  color: $primary-color;
+  background-color: $white-color;
+
+  .section-header {
+    color: inherit;
+
+    h3 {
+      color: inherit;
+      text-align: center;
+    }
+  }
+
+  .speaker-card {
+    display: flex;
+    flex-direction: row;
+    color: inherit;
+    align-items: center;
+    margin-bottom: 2rem;
+
+    .speaker-image {
+      align-self: stretch;
+      padding-left: 1rem;
+      padding-top: 1rem;
+      background-image: url('../images/chess-bg.png');
+      background-position: left top;
+      background-repeat: no-repeat;
+      background-size: 40%;
+
+      img {
+        min-width: 15vw;
+      }
+    }
+
+    .speaker-card-details {
+      margin-left: 14px;
+      align-self: stretch;
+      display: flex;
+      flex-direction: column;
+
+      h4 {
+        margin: 0;
+        margin-bottom: 4px;
+        color: inherit;
+      }
+
+      .underline-speakers {
+        height: 1px;
+        background-color: $accent-color;
+        width: 24px;
+      }
+
+      .speker-qualifications {
+        margin-top: 0;
+        color: $secondary-color;
+        font-size: 0.7rem;
+      }
+
+      .speaker-desc {
+        color: inherit;
+        margin-bottom: 0;
+        font-size: 0.7rem;
+        align-self: flex-end;
+      }
+    }
+  }
+
+  #load-more {
+    padding: 8px;
+    color: $primary-color;
+    background-color: rgba($white-color, 0);
+    border: 1px solid $accent-color;
+  }
+}
