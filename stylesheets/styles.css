@@ -6440,5 +6440,57 @@ footer p {
     padding: 6rem 5vw 6rem 5vw;
   }
 }
+@media screen and (min-width: 768px) {
+  .top-cover {
+    padding-top: 0 !important;
+  }
+
+  .join-summit {
+    display: none;
+  }
+
+  .program-details-btn {
+    display: inline-block;
+  }
+
+  .section-header {
+    font-size: 2rem;
+    line-height: 4rem;
+  }
+
+  nav {
+    background-color: #fff;
+    position: relative;
+    height: initial;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    padding: 1rem 5vw 1rem 5vw;
+  }
+  nav ul {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+  }
+  nav ul li {
+    margin: 1rem;
+  }
+  nav ul li a {
+    font-size: 1rem;
+  }
+  nav .logo {
+    width: 150px;
+    display: initial;
+  }
+  nav .logo img {
+    width: 100%;
+    height: 100%;
+  }
+
+  a[href="#close"] {
+    display: none;
+  }
+}
 
 /*# sourceMappingURL=styles.css.map */

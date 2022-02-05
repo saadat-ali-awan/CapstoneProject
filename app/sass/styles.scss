@@ -387,3 +387,61 @@ footer {
     padding: 6rem 5vw 6rem 5vw;
   }
 }
+
+@media screen and (min-width: 768px) {
+  .top-cover {
+    padding-top: 0 !important;
+  }
+
+  .join-summit {
+    display: none;
+  }
+
+  .program-details-btn {
+    display: inline-block;
+  }
+
+  .section-header {
+    font-size: 2rem;
+    line-height: 4rem;
+  }
+
+  nav {
+    background-color: $white-color;
+    position: relative;
+    height: initial;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    padding: 1rem 5vw 1rem 5vw;
+
+    ul {
+      display: flex;
+      flex-direction: row;
+      margin: 0;
+
+      li {
+        margin: 1rem;
+
+        a {
+          font-size: 1rem;
+        }
+      }
+    }
+
+    .logo {
+      width: 150px;
+      display: initial;
+
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+
+  a[href="#close"] {
+    display: none;
+  }
+}
