@@ -481,4 +481,16 @@ footer {
       text-decoration: underline !important;
     }
   }
+
+  .featured-speakers {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 3rem;
+    column-gap: 3rem;
+    padding: 3rem 5rem 3rem 5rem;
+
+    .speaker-card {
+      margin-bottom: 0;
+    }
+  }
 }

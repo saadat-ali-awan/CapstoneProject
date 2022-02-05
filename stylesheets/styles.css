@@ -6520,6 +6520,17 @@ footer p {
     background-color: rgba(211, 211, 211, 0) !important;
     text-decoration: underline !important;
   }
+
+  .featured-speakers {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 3rem;
+    column-gap: 3rem;
+    padding: 3rem 5rem 3rem 5rem;
+  }
+  .featured-speakers .speaker-card {
+    margin-bottom: 0;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
