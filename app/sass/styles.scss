@@ -287,3 +287,26 @@ header {
     border: 1px solid $accent-color;
   }
 }
+
+.partners-section {
+  background-color: $primary-color;
+
+  .partner-images {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+
+    figure {
+      width: 33.33%;
+      margin: 0;
+      padding: 0 12px 12px 12px;
+    }
+  }
+}
