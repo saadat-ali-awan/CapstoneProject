@@ -501,4 +501,22 @@ footer {
       }
     }
   }
+
+  .about {
+    .top-cover {
+      .content {
+        text-align: center;
+      }
+    }
+  }
+
+  .history {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    .conference-card {
+      padding: 12px;
+    }
+  }
 }

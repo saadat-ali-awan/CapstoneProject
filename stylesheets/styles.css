@@ -6535,6 +6535,19 @@ footer p {
   .partners-section .partner-images figure {
     width: 10%;
   }
+
+  .about .top-cover .content {
+    text-align: center;
+  }
+
+  .history {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .history .conference-card {
+    padding: 12px;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
