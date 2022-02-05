@@ -371,3 +371,19 @@ footer {
     }
   }
 }
+
+@media screen and (min-width: 992px) {
+  nav {
+    padding: 1rem 15vw 1rem 15vw !important;
+  }
+
+  .content {
+    padding: 6rem 15vw 6rem 15vw;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  .content {
+    padding: 6rem 5vw 6rem 5vw;
+  }
+}
