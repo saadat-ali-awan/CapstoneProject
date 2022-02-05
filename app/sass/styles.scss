@@ -88,6 +88,104 @@ nav {
   }
 }
 
+.section-header {
+  text-align: center;
+  color: $white-color;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+
+  .underline {
+    height: 1px;
+    background-color: $secondary-color;
+    width: 7%;
+    margin-top: 8px;
+  }
+}
+
+footer {
+  display: flex;
+
+  figure {
+    flex: 0.8;
+    margin: 0;
+    padding: 0.5rem 3rem 0.5rem 3rem;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  p {
+    color: rgba($primary-color, 0.8);
+    flex: 1.2;
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    line-height: 1.2rem;
+  }
+}
+
+.conference-logo-section {
+  color: $primary-color;
+
+  .section-header {
+    color: inherit;
+  }
+
+  > p {
+    font-size: 0.9rem;
+    text-align: center;
+    padding: 0 12px 0 12px;
+  }
+}
+
+.history {
+  display: flex;
+  flex-direction: column;
+  padding: 12px;
+  text-align: center;
+
+  h3 {
+    color: $white-color;
+    margin: 0;
+  }
+
+  p {
+    font-size: 0.9rem;
+    color: $white-color;
+    margin: 0;
+  }
+
+  #conference-1 {
+    background:
+      linear-gradient(
+        rgba($secondary-color, 0.7),
+        rgba($secondary-color, 0.7)
+      ),
+      url('../images/conference-1.jpg') no-repeat center;
+  }
+
+  #conference-2 {
+    background:
+      linear-gradient(
+        rgba($secondary-color, 0.7),
+        rgba($secondary-color, 0.7)
+      ),
+      url('../images/conference-2.jpg') no-repeat center;
+  }
+
+  .conference-card {
+    background-size: cover;
+    height: 170px;
+    margin: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
 header {
   text-align: left;
   font-size: 1.5rem;
@@ -141,6 +239,29 @@ header {
         font-size: inherit;
         text-align: inherit;
       }
+    }
+  }
+}
+
+.partners-section {
+  background-color: $primary-color;
+
+  .partner-images {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+
+    figure {
+      width: 33.33%;
+      margin: 0;
+      padding: 0 12px 12px 12px;
     }
   }
 }
@@ -288,88 +409,26 @@ header {
   }
 }
 
-.partners-section {
-  background-color: $primary-color;
-
-  .partner-images {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-
-    img {
-      width: 100%;
-      height: 100%;
-      object-fit: contain;
-    }
-
-    figure {
-      width: 33.33%;
-      margin: 0;
-      padding: 0 12px 12px 12px;
-    }
-  }
+.hidden {
+  display: none;
 }
 
-footer {
-  display: flex;
-
-  figure {
-    flex: 0.8;
-    margin: 0;
-    padding: 0.5rem 3rem 0.5rem 3rem;
-
-    img {
-      width: 100%;
-    }
-  }
-
-  p {
-    color: rgba($primary-color, 0.8);
-    flex: 1.2;
-    font-size: 12px;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    line-height: 1.2rem;
-  }
-}
-
-.conference-logo-section {
-  color: $primary-color;
-
-  .section-header {
-    color: inherit;
-  }
-
-  > p {
-    font-size: 0.9rem;
+.about {
+  header {
     text-align: center;
-    padding: 0 12px 0 12px;
   }
 }
 
-.partners-section {
-  background-color: $primary-color;
+.logo {
+  display: none;
+}
 
-  .partner-images {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
+.join-summit {
+  display: inline-block;
+}
 
-    img {
-      width: 100%;
-      height: 100%;
-      object-fit: contain;
-    }
-
-    figure {
-      width: 33.33%;
-      margin: 0;
-      padding: 0 12px 12px 12px;
-    }
-  }
+.program-details-btn {
+  display: none;
 }
 
 @media screen and (min-width: 992px) {

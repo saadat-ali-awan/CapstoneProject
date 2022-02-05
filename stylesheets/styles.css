@@ -6183,6 +6183,83 @@ nav .active {
   display: none;
 }
 
+.section-header {
+  text-align: center;
+  color: #fff;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+.section-header .underline {
+  height: 1px;
+  background-color: #ec5242;
+  width: 7%;
+  margin-top: 8px;
+}
+
+footer {
+  display: flex;
+}
+footer figure {
+  flex: 0.8;
+  margin: 0;
+  padding: 0.5rem 3rem 0.5rem 3rem;
+}
+footer figure img {
+  width: 100%;
+}
+footer p {
+  color: rgba(39, 42, 49, 0.8);
+  flex: 1.2;
+  font-size: 12px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  line-height: 1.2rem;
+}
+
+.conference-logo-section {
+  color: #272a31;
+}
+.conference-logo-section .section-header {
+  color: inherit;
+}
+.conference-logo-section > p {
+  font-size: 0.9rem;
+  text-align: center;
+  padding: 0 12px 0 12px;
+}
+
+.history {
+  display: flex;
+  flex-direction: column;
+  padding: 12px;
+  text-align: center;
+}
+.history h3 {
+  color: #fff;
+  margin: 0;
+}
+.history p {
+  font-size: 0.9rem;
+  color: #fff;
+  margin: 0;
+}
+.history #conference-1 {
+  background: linear-gradient(rgba(236, 82, 66, 0.7), rgba(236, 82, 66, 0.7)), url("../images/conference-1.jpg") no-repeat center;
+}
+.history #conference-2 {
+  background: linear-gradient(rgba(236, 82, 66, 0.7), rgba(236, 82, 66, 0.7)), url("../images/conference-2.jpg") no-repeat center;
+}
+.history .conference-card {
+  background-size: cover;
+  height: 170px;
+  margin: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 header {
   text-align: left;
   font-size: 1.5rem;
@@ -6230,6 +6307,26 @@ header > h1 {
 .top-section > .top-cover .top-section-desc * {
   font-size: inherit;
   text-align: inherit;
+}
+
+.partners-section {
+  background-color: #272a31;
+}
+.partners-section .partner-images {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+.partners-section .partner-images img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.partners-section .partner-images figure {
+  width: 33.33%;
+  margin: 0;
+  padding: 0 12px 12px 12px;
 }
 
 .main-program {
@@ -6353,77 +6450,24 @@ header > h1 {
   border: 1px solid #d3d3d3;
 }
 
-.partners-section {
-  background-color: #272a31;
-}
-.partners-section .partner-images {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-}
-.partners-section .partner-images img {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-}
-.partners-section .partner-images figure {
-  width: 33.33%;
-  margin: 0;
-  padding: 0 12px 12px 12px;
+.hidden {
+  display: none;
 }
 
-footer {
-  display: flex;
-}
-footer figure {
-  flex: 0.8;
-  margin: 0;
-  padding: 0.5rem 3rem 0.5rem 3rem;
-}
-footer figure img {
-  width: 100%;
-}
-footer p {
-  color: rgba(39, 42, 49, 0.8);
-  flex: 1.2;
-  font-size: 12px;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  line-height: 1.2rem;
-}
-
-.conference-logo-section {
-  color: #272a31;
-}
-.conference-logo-section .section-header {
-  color: inherit;
-}
-.conference-logo-section > p {
-  font-size: 0.9rem;
+.about header {
   text-align: center;
-  padding: 0 12px 0 12px;
 }
 
-.partners-section {
-  background-color: #272a31;
+.logo {
+  display: none;
 }
-.partners-section .partner-images {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
+
+.join-summit {
+  display: inline-block;
 }
-.partners-section .partner-images img {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-}
-.partners-section .partner-images figure {
-  width: 33.33%;
-  margin: 0;
-  padding: 0 12px 12px 12px;
+
+.program-details-btn {
+  display: none;
 }
 
 @media screen and (min-width: 992px) {
