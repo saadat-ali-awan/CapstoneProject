@@ -6453,6 +6453,14 @@ footer p {
     display: inline-block;
   }
 
+  footer figure {
+    display: flex;
+    justify-content: flex-end;
+  }
+  footer figure img {
+    width: 200px;
+  }
+
   .section-header {
     font-size: 2rem;
     line-height: 4rem;

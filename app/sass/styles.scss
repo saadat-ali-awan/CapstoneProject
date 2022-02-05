@@ -401,6 +401,17 @@ footer {
     display: inline-block;
   }
 
+  footer {
+    figure {
+      display: flex;
+      justify-content: flex-end;
+
+      img {
+        width: 200px;
+      }
+    }
+  }
+
   .section-header {
     font-size: 2rem;
     line-height: 4rem;
