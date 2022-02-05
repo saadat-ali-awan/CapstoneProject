@@ -6232,4 +6232,59 @@ header > h1 {
   text-align: inherit;
 }
 
+.main-program {
+  display: flex;
+  flex-direction: column;
+  background-color: #272a31;
+  color: #fff;
+  background-image: url("../images/about-bg.png");
+}
+.main-program .section-header h3 {
+  color: inherit;
+  text-align: center;
+}
+.main-program .program-details {
+  display: flex;
+  flex-direction: column;
+  padding: 4px;
+  color: inherit;
+  max-width: 1024px;
+  align-self: center;
+}
+.main-program .program-details .program-card {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: rgba(211, 211, 211, 0.1);
+  margin: 8px;
+  color: inherit;
+}
+.main-program .program-details .program-card img {
+  width: 50px;
+  color: inherit;
+}
+.main-program .program-details .program-card > p {
+  flex: 8;
+  color: inherit;
+}
+.main-program .program-details .program-card h4 {
+  color: #ec5242;
+  flex: 2;
+}
+.main-program .program-details .program-card * {
+  margin: 8px;
+}
+.main-program .program-footer {
+  display: flex;
+  justify-content: center;
+  margin: 1rem;
+}
+.main-program .program-footer a {
+  padding: 32px;
+  text-decoration: none;
+  font-size: 1rem;
+  background-color: #ec5242;
+  color: #fff;
+}
+
 /*# sourceMappingURL=styles.css.map */

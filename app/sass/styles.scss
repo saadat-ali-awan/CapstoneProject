@@ -144,3 +144,69 @@ header {
     }
   }
 }
+
+.main-program {
+  display: flex;
+  flex-direction: column;
+  background-color: $primary-color;
+  color: $white-color;
+  background-image: url('../images/about-bg.png');
+
+  .section-header {
+    h3 {
+      color: inherit;
+      text-align: center;
+    }
+  }
+
+  .program-details {
+    display: flex;
+    flex-direction: column;
+    padding: 4px;
+    color: inherit;
+    max-width: 1024px;
+    align-self: center;
+
+    .program-card {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      background-color: rgba($accent-color, 0.1);
+      margin: 8px;
+      color: inherit;
+
+      img {
+        width: 50px;
+        color: inherit;
+      }
+
+      > p {
+        flex: 8;
+        color: inherit;
+      }
+
+      h4 {
+        color: $secondary-color;
+        flex: 2;
+      }
+
+      * {
+        margin: 8px;
+      }
+    }
+  }
+
+  .program-footer {
+    display: flex;
+    justify-content: center;
+    margin: 1rem;
+
+    a {
+      padding: 32px;
+      text-decoration: none;
+      font-size: 1rem;
+      background-color: $secondary-color;
+      color: $white-color;
+    }
+  }
+}
