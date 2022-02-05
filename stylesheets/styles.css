@@ -6406,4 +6406,24 @@ footer p {
   padding: 0 12px 0 12px;
 }
 
+.partners-section {
+  background-color: #272a31;
+}
+.partners-section .partner-images {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+.partners-section .partner-images img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.partners-section .partner-images figure {
+  width: 33.33%;
+  margin: 0;
+  padding: 0 12px 12px 12px;
+}
+
 /*# sourceMappingURL=styles.css.map */
