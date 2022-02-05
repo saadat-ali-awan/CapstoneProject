@@ -455,4 +455,30 @@ footer {
   a[href="#close"] {
     display: none;
   }
+
+  .program-details {
+    flex-direction: row !important;
+
+    .program-card {
+      flex-direction: column !important;
+      padding: 12px;
+      margin: 2px !important;
+
+      h4 {
+        flex: initial !important;
+      }
+
+      p {
+        font-size: 0.8rem;
+        text-align: center;
+      }
+    }
+  }
+
+  .program-footer {
+    a {
+      background-color: rgba($accent-color, 0) !important;
+      text-decoration: underline !important;
+    }
+  }
 }
