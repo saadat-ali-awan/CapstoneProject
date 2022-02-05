@@ -6183,4 +6183,53 @@ nav .active {
   display: none;
 }
 
+header {
+  text-align: left;
+  font-size: 1.5rem;
+  line-height: initial;
+  color: #ec5242;
+}
+header > p:nth-child(1) {
+  margin-bottom: 0;
+  color: inherit;
+  line-height: inherit;
+}
+header > h1 {
+  margin-top: 0;
+  font-size: 3rem;
+  color: inherit;
+  line-height: inherit;
+}
+
+.top-section {
+  background-image: url("../images/Eco-Friendly.jpg");
+  background-size: contain;
+  background-color: #d3d3d3;
+  padding: 0;
+}
+.top-section > .top-cover {
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 12px;
+}
+.top-section > .top-cover > p {
+  color: #272a31;
+}
+.top-section > .top-cover:nth-child(3) {
+  border: #d3d3d3 1px solid;
+  background-color: #fff;
+  padding: 12px;
+}
+.top-section > .top-cover h2 {
+  margin-bottom: 0;
+}
+.top-section > .top-cover .top-section-desc {
+  font-size: 0.9rem;
+  text-align: center;
+  padding: 0 12px 0 12px;
+}
+.top-section > .top-cover .top-section-desc * {
+  font-size: inherit;
+  text-align: inherit;
+}
+
 /*# sourceMappingURL=styles.css.map */
