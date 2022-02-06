@@ -1,0 +1,604 @@
+$primary-color: #272a31;
+$secondary-color: #ec5242;
+$accent-color: #d3d3d3;
+$white-color: #fff;
+
+@font-face {
+  font-family: 'Cocogoose Letterpress';
+  src: url(../../fonts/COCOGOOSELETTERPRESS_TRIAL.ttf);
+}
+
+@font-face {
+  font-family: "Lato";
+  src: url("https://fonts.googleapis.com/css2?family=Lato:wght@400;900&display=swap");
+}
+
+@font-face {
+  font-family: "Font Awesome 5 Free";
+  font-style: normal;
+  font-weight: 900;
+  src: url("../app/sass/webfonts/fa-solid-900.eot");
+  src: url("../app/sass/webfonts/fa-solid-900.eot?#iefix") format("embedded-opentype"), url("../app/sass/webfonts/fa-solid-900.woff2") format("woff2"), url("../app/sass/webfonts/fa-solid-900.woff") format("woff"), url("../app/sass/webfonts/fa-solid-900.ttf") format("truetype"), url("../app/sass/webfonts/fa-solid-900.svg#fontawesome") format("svg");
+}
+
+body {
+  box-sizing: border-box;
+  margin: 0;
+
+  * {
+    font-family: 'Lato', sans-serif;
+    color: $primary-color;
+    box-sizing: border-box;
+    line-height: 1.5rem;
+  }
+}
+
+section {
+  padding: 12px;
+}
+
+nav {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  left: 0;
+  top: 0;
+  align-items: center;
+  font-family: 'Lato', sans-serif;
+  text-decoration: none;
+  font-size: 2rem;
+  padding: 12px;
+  box-sizing: inherit;
+  z-index: 1000;
+  background-color: $accent-color;
+
+  a {
+    text-decoration: inherit;
+    color: $primary-color;
+  }
+
+  > a[href="#close"] {
+    align-self: flex-end;
+  }
+
+  > ul {
+    flex-direction: column;
+    padding: 0;
+    list-style: none;
+
+    li {
+      line-height: 3rem;
+    }
+  }
+
+  .active {
+    color: $secondary-color;
+  }
+}
+
+.inactive {
+  position: relative;
+  left: 0;
+  right: unset;
+  width: max-content;
+  height: max-content;
+  background-color: rgba(0, 0, 0, 0);
+
+  > ul {
+    display: none;
+  }
+}
+
+.section-header {
+  text-align: center;
+  color: $white-color;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+
+  .underline {
+    height: 1px;
+    background-color: $secondary-color;
+    width: 7%;
+    margin-top: 8px;
+  }
+}
+
+footer {
+  display: flex;
+
+  figure {
+    flex: 0.8;
+    margin: 0;
+    padding: 0.5rem 3rem 0.5rem 3rem;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  p {
+    color: rgba($primary-color, 0.8);
+    flex: 1.2;
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    line-height: 1.2rem;
+  }
+}
+
+.conference-logo-section {
+  color: $primary-color;
+
+  .section-header {
+    color: inherit;
+  }
+
+  > p {
+    font-size: 0.9rem;
+    text-align: center;
+    padding: 0 12px 0 12px;
+  }
+}
+
+.history {
+  display: flex;
+  flex-direction: column;
+  padding: 12px;
+  text-align: center;
+
+  h3 {
+    color: $white-color;
+    margin: 0;
+  }
+
+  p {
+    font-size: 0.9rem;
+    color: $white-color;
+    margin: 0;
+  }
+
+  #conference-1 {
+    background:
+      linear-gradient(
+        rgba($secondary-color, 0.7),
+        rgba($secondary-color, 0.7)
+      ),
+      url('../images/conference-1.jpg') no-repeat center;
+  }
+
+  #conference-2 {
+    background:
+      linear-gradient(
+        rgba($secondary-color, 0.7),
+        rgba($secondary-color, 0.7)
+      ),
+      url('../images/conference-2.jpg') no-repeat center;
+  }
+
+  .conference-card {
+    background-size: cover;
+    height: 170px;
+    margin: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+header {
+  text-align: left;
+  font-size: 1.5rem;
+  line-height: initial;
+  color: $secondary-color;
+
+  > p:nth-child(1) {
+    margin-bottom: 0;
+    color: inherit;
+    line-height: inherit;
+  }
+
+  > h1 {
+    margin-top: 0;
+    font-size: 3rem;
+    color: inherit;
+    line-height: inherit;
+  }
+}
+
+.top-section {
+  background-image: url('../images/Eco-Friendly.jpg');
+  background-size: contain;
+  background-color: $accent-color;
+  padding: 0;
+
+  > .top-cover {
+    background-color: rgba($white-color, 0.9);
+    padding: 12px;
+
+    > p {
+      color: $primary-color;
+    }
+
+    &:nth-child(3) {
+      border: $accent-color 1px solid;
+      background-color: $white-color;
+      padding: 12px;
+    }
+
+    h2 {
+      margin-bottom: 0;
+    }
+
+    .top-section-desc {
+      font-size: 0.9rem;
+      text-align: center;
+      padding: 0 12px 0 12px;
+
+      * {
+        font-size: inherit;
+        text-align: inherit;
+      }
+    }
+  }
+}
+
+.partners-section {
+  background-color: $primary-color;
+
+  .partner-images {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+
+    figure {
+      width: 33.33%;
+      margin: 0;
+      padding: 0 12px 12px 12px;
+    }
+  }
+}
+
+.fas {
+  font-family: 'Font Awesome 5 Free', sans-serif;
+  font-weight: 900;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  line-height: 1;
+}
+
+.fa-bars::before {
+  content: "\f0c9";
+}
+
+.fa-times::before {
+  content: "\f00d";
+}
+
+.main-program {
+  display: flex;
+  flex-direction: column;
+  background-color: $primary-color;
+  color: $white-color;
+  background-image: url('../images/about-bg.png');
+
+  .section-header {
+    h3 {
+      color: inherit;
+      text-align: center;
+    }
+  }
+
+  .program-details {
+    display: flex;
+    flex-direction: column;
+    padding: 4px;
+    color: inherit;
+    max-width: 1024px;
+    align-self: center;
+
+    .program-card {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      background-color: rgba($accent-color, 0.1);
+      margin: 8px;
+      color: inherit;
+
+      img {
+        width: 50px;
+        color: inherit;
+      }
+
+      > p {
+        flex: 8;
+        color: inherit;
+      }
+
+      h4 {
+        color: $secondary-color;
+        flex: 2;
+      }
+
+      * {
+        margin: 8px;
+      }
+    }
+  }
+
+  .program-footer {
+    display: flex;
+    justify-content: center;
+    margin: 1rem;
+
+    a {
+      padding: 32px;
+      text-decoration: none;
+      font-size: 1rem;
+      background-color: $secondary-color;
+      color: $white-color;
+    }
+  }
+}
+
+.speakers {
+  display: flex;
+  flex-direction: column;
+  color: $primary-color;
+  background-color: $white-color;
+
+  .section-header {
+    color: inherit;
+
+    h3 {
+      color: inherit;
+      text-align: center;
+    }
+  }
+
+  .speaker-card {
+    display: flex;
+    flex-direction: row;
+    color: inherit;
+    align-items: center;
+    margin-bottom: 2rem;
+
+    .speaker-image {
+      align-self: stretch;
+      padding-left: 1rem;
+      padding-top: 1rem;
+      background-image: url('../images/chess-bg.png');
+      background-position: left top;
+      background-repeat: no-repeat;
+      background-size: 40%;
+
+      img {
+        min-width: 15vw;
+      }
+    }
+
+    .speaker-card-details {
+      margin-left: 14px;
+      align-self: stretch;
+      display: flex;
+      flex-direction: column;
+
+      h4 {
+        margin: 0;
+        margin-bottom: 4px;
+        color: inherit;
+      }
+
+      .underline-speakers {
+        height: 1px;
+        background-color: $accent-color;
+        width: 24px;
+      }
+
+      .speker-qualifications {
+        margin-top: 0;
+        color: $secondary-color;
+        font-size: 0.7rem;
+      }
+
+      .speaker-desc {
+        color: inherit;
+        margin-bottom: 0;
+        font-size: 0.7rem;
+        align-self: flex-end;
+      }
+    }
+  }
+
+  #load-more {
+    padding: 8px;
+    color: $primary-color;
+    background-color: rgba($white-color, 0);
+    border: 1px solid $accent-color;
+  }
+}
+
+.hidden {
+  display: none;
+}
+
+.about {
+  header {
+    text-align: center;
+  }
+}
+
+.logo {
+  display: none;
+}
+
+.join-summit {
+  display: inline-block;
+}
+
+.program-details-btn {
+  display: none;
+}
+
+@media screen and (min-width: 992px) {
+  nav {
+    padding: 1rem 15vw 1rem 15vw !important;
+  }
+
+  .content {
+    padding: 6rem 15vw 6rem 15vw;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  .content {
+    padding: 6rem 5vw 6rem 5vw;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .top-cover {
+    padding-top: 0 !important;
+  }
+
+  .join-summit {
+    display: none;
+  }
+
+  .program-details-btn {
+    display: inline-block;
+  }
+
+  footer {
+    figure {
+      display: flex;
+      justify-content: flex-end;
+
+      img {
+        width: 200px;
+      }
+    }
+  }
+
+  .section-header {
+    font-size: 2rem;
+    line-height: 4rem;
+  }
+
+  nav {
+    background-color: $white-color;
+    position: relative;
+    height: initial;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    padding: 1rem 5vw 1rem 5vw;
+
+    ul {
+      display: flex;
+      flex-direction: row;
+      margin: 0;
+
+      li {
+        margin: 1rem;
+
+        a {
+          font-size: 1rem;
+        }
+      }
+    }
+
+    .logo {
+      width: 150px;
+      display: initial;
+
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+
+  a[href="#close"] {
+    display: none;
+  }
+
+  .program-details {
+    flex-direction: row !important;
+
+    .program-card {
+      flex-direction: column !important;
+      padding: 12px;
+      margin: 2px !important;
+
+      h4 {
+        flex: initial !important;
+      }
+
+      p {
+        font-size: 0.8rem;
+        text-align: center;
+      }
+    }
+  }
+
+  .program-footer {
+    a {
+      background-color: rgba($accent-color, 0) !important;
+      text-decoration: underline !important;
+    }
+  }
+
+  .featured-speakers {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 3rem;
+    column-gap: 3rem;
+    padding: 3rem 5rem 3rem 5rem;
+
+    .speaker-card {
+      margin-bottom: 0;
+    }
+  }
+
+  .partners-section {
+    .partner-images {
+      figure {
+        width: 10%;
+      }
+    }
+  }
+
+  .about {
+    .top-cover {
+      .content {
+        text-align: center;
+      }
+    }
+  }
+
+  .history {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    .conference-card {
+      padding: 12px;
+    }
+  }
+}
