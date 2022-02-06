@@ -108,6 +108,7 @@ window.addEventListener('load', () => {
   }
 
   if (window.location.pathname === '/index.html' || window.location.pathname === '/' || window.location.pathname === '/CapstoneProject/index.html' || window.location.pathname === '/CapstoneProject/') {
+    // Dynamic Speakers List
     if (window.innerWidth >= 768) {
       lastLoaded = loadMore(lastLoaded, speakersBox, 6);
     } else {
