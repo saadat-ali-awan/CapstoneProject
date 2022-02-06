@@ -75,7 +75,6 @@ function removeButtonIfListFinished(lastLoaded) {
 
 function loadMore(lastLoaded, speakersBox, totalToLoad) {
   for (let index = lastLoaded + 1; index <= lastLoaded + totalToLoad; index += 1) {
-    // html string
     const htmlStr = speakerCardTemplate(speakerList[index]);
     const elem = document.createElement('div');
     elem.classList.add('speaker-card');
