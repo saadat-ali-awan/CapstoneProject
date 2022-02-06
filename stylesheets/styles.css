@@ -8,14 +8,6 @@
   src: url("https://fonts.googleapis.com/css2?family=Lato:wght@400;900&display=swap");
 }
 
-@font-face {
-  font-family: "Font Awesome 5 Free";
-  font-style: normal;
-  font-weight: 900;
-  src: url("../app/sass/webfonts/fa-solid-900.eot");
-  src: url("../app/sass/webfonts/fa-solid-900.eot?#iefix") format("embedded-opentype"), url("../app/sass/webfonts/fa-solid-900.woff2") format("woff2"), url("../app/sass/webfonts/fa-solid-900.woff") format("woff"), url("../app/sass/webfonts/fa-solid-900.ttf") format("truetype"), url("../app/sass/webfonts/fa-solid-900.svg#fontawesome") format("svg");
-}
-
 body {
   box-sizing: border-box;
   margin: 0;
@@ -30,6 +22,30 @@ body * {
 
 section {
   padding: 12px;
+}
+
+footer {
+  display: flex;
+}
+
+footer figure {
+  flex: 0.8;
+  margin: 0;
+  padding: 0.5rem 3rem 0.5rem 3rem;
+}
+
+footer figure img {
+  width: 100%;
+}
+
+footer p {
+  color: rgba(39, 42, 49, 0.8);
+  flex: 1.2;
+  font-size: 12px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  line-height: 1.2rem;
 }
 
 nav {
@@ -57,6 +73,10 @@ nav a {
 
 nav > a[href="#close"] {
   align-self: flex-end;
+}
+
+nav > a[href="#close"] img {
+  width: 50px;
 }
 
 nav > ul {
@@ -99,30 +119,6 @@ nav .active {
   background-color: #ec5242;
   width: 7%;
   margin-top: 8px;
-}
-
-footer {
-  display: flex;
-}
-
-footer figure {
-  flex: 0.8;
-  margin: 0;
-  padding: 0.5rem 3rem 0.5rem 3rem;
-}
-
-footer figure img {
-  width: 100%;
-}
-
-footer p {
-  color: rgba(39, 42, 49, 0.8);
-  flex: 1.2;
-  font-size: 12px;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  line-height: 1.2rem;
 }
 
 .conference-logo-section {
@@ -252,26 +248,6 @@ header > h1 {
   width: 33.33%;
   margin: 0;
   padding: 0 12px 12px 12px;
-}
-
-.fas {
-  font-family: "Font Awesome 5 Free", sans-serif;
-  font-weight: 900;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-font-smoothing: antialiased;
-  display: inline-block;
-  font-style: normal;
-  font-variant: normal;
-  text-rendering: auto;
-  line-height: 1;
-}
-
-.fa-bars::before {
-  content: "\f0c9";
-}
-
-.fa-times::before {
-  content: "\f00d";
 }
 
 .main-program {

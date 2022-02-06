@@ -3,11 +3,11 @@ function navigate(hash) {
     case '#home':
     case '#about':
     case '#close':
-      document.querySelector('nav > a[href=\'#close\'] > i').classList.toggle('fa-times');
-      document.querySelector('nav > a[href=\'#close\'] > i').classList.toggle('fa-bars');
-      if (document.querySelector('nav > a[href=\'#close\'] > i').classList.contains('fa-bars')) {
+      if (document.querySelector('nav > a[href=\'#close\'] > img').getAttribute('src') === 'images/bars.png') {
+        document.querySelector('nav > a[href=\'#close\'] > img').setAttribute('src', 'images/close.png');
         document.querySelector('nav').classList.add('inactive');
       } else {
+        document.querySelector('nav > a[href=\'#close\'] > img').setAttribute('src', 'images/bars.png');
         document.querySelector('nav').classList.remove('inactive');
       }
       break;
