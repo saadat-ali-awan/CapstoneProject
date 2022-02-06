@@ -114,6 +114,11 @@ nav .active {
   flex-direction: column;
 }
 
+.section-header p {
+  color: inherit;
+  margin: 0;
+}
+
 .section-header .underline {
   height: 1px;
   background-color: #ec5242;

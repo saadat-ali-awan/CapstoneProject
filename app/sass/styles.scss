@@ -118,6 +118,11 @@ nav {
   display: flex;
   flex-direction: column;
 
+  p {
+    color: inherit;
+    margin: 0;
+  }
+
   .underline {
     height: 1px;
     background-color: $secondary-color;

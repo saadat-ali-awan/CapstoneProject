@@ -5,10 +5,10 @@ function navigate(hash) {
     case '#close':
       if (document.querySelector('nav > a[href=\'#close\'] > img').getAttribute('src') === 'images/bars.png') {
         document.querySelector('nav > a[href=\'#close\'] > img').setAttribute('src', 'images/close.png');
-        document.querySelector('nav').classList.add('inactive');
+        document.querySelector('nav').classList.remove('inactive');
       } else {
         document.querySelector('nav > a[href=\'#close\'] > img').setAttribute('src', 'images/bars.png');
-        document.querySelector('nav').classList.remove('inactive');
+        document.querySelector('nav').classList.add('inactive');
       }
       break;
     default:
