@@ -3,11 +3,6 @@ $secondary-color: #ec5242;
 $accent-color: #d3d3d3;
 $white-color: #fff;
 
-@import 'icons/fontawesome.scss';
-@import 'icons/solid.scss';
-@import 'icons/regular.scss';
-@import 'icons/brands.scss';
-
 @font-face {
   font-family: 'Cocogoose Letterpress';
   src: url(../../fonts/COCOGOOSELETTERPRESS_TRIAL.ttf);
@@ -16,6 +11,14 @@ $white-color: #fff;
 @font-face {
   font-family: "Lato";
   src: url("https://fonts.googleapis.com/css2?family=Lato:wght@400;900&display=swap");
+}
+
+@font-face {
+  font-family: "Font Awesome 5 Free";
+  font-style: normal;
+  font-weight: 900;
+  src: url("../app/sass/webfonts/fa-solid-900.eot");
+  src: url("../app/sass/webfonts/fa-solid-900.eot?#iefix") format("embedded-opentype"), url("../app/sass/webfonts/fa-solid-900.woff2") format("woff2"), url("../app/sass/webfonts/fa-solid-900.woff") format("woff"), url("../app/sass/webfonts/fa-solid-900.ttf") format("truetype"), url("../app/sass/webfonts/fa-solid-900.svg#fontawesome") format("svg");
 }
 
 body {
@@ -264,6 +267,26 @@ header {
       padding: 0 12px 12px 12px;
     }
   }
+}
+
+.fas {
+  font-family: 'Font Awesome 5 Free', sans-serif;
+  font-weight: 900;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  line-height: 1;
+}
+
+.fa-bars::before {
+  content: "\f0c9";
+}
+
+.fa-times::before {
+  content: "\f00d";
 }
 
 .main-program {
