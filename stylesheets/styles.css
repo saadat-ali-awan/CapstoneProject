@@ -350,6 +350,10 @@ header > h1 {
   text-align: inherit;
 }
 
+.top-section > .top-cover .content .top-section-desc a {
+  font-weight: bold;
+}
+
 .speakers {
   display: flex;
   flex-direction: column;
