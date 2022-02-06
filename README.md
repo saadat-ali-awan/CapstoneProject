@@ -21,7 +21,8 @@
 
 ## Live Demo
 
-[Live Demo Link](https://saadat123456.github.io/Capstone-Project-Conference-page/)
+[Live Demo Link](https://saadat123456.github.io/CapstoneProject/)
+[Features](https://www.loom.com/share/8a048c849ce8456e9f25b9f9034daca3)
 
 ### Project requirements
 

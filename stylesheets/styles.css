@@ -1,0 +1,618 @@
+@font-face {
+  font-family: "Cocogoose Letterpress";
+  src: url(../../fonts/COCOGOOSELETTERPRESS_TRIAL.ttf);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;900&display=swap');
+
+body {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body * {
+  font-family: "Lato", sans-serif;
+  color: #272a31;
+  box-sizing: border-box;
+  line-height: 1.5rem;
+}
+
+section {
+  padding: 12px;
+}
+
+footer {
+  display: flex;
+}
+
+footer figure {
+  flex: 0.8;
+  margin: 0;
+  padding: 0.5rem 3rem 0.5rem 3rem;
+}
+
+footer figure img {
+  width: 100%;
+}
+
+footer p {
+  color: rgba(39, 42, 49, 0.8);
+  flex: 1.2;
+  font-size: 12px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  line-height: 1.2rem;
+}
+
+.section-header {
+  text-align: center;
+  color: #fff;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.section-header p {
+  color: inherit;
+  margin: 0;
+}
+
+.section-header .underline {
+  height: 1px;
+  background-color: #ec5242;
+  width: 7%;
+  margin-top: 8px;
+}
+
+.past-conference-section {
+  color: #272a31;
+}
+
+.past-conference-section .section-header {
+  color: inherit;
+}
+
+.past-conference-section > p {
+  font-size: 0.9rem;
+  text-align: center;
+  padding: 0 12px 0 12px;
+}
+
+.conference-Logo {
+  color: #272a31;
+}
+
+.conference-Logo .section-header {
+  color: inherit;
+}
+
+.conference-Logo > p {
+  font-size: 0.9rem;
+  text-align: center;
+  padding: 0 12px 0 12px;
+}
+
+.conference-Logo figure {
+  display: flex;
+  justify-content: center;
+}
+
+.conference-Logo figure img {
+  width: 90%;
+  border: #d3d3d3 solid 2px;
+  padding: 24px 42px 24px 42px;
+}
+
+nav {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  left: 0;
+  top: 0;
+  align-items: center;
+  font-family: "Lato", sans-serif;
+  text-decoration: none;
+  font-size: 2rem;
+  padding: 12px;
+  box-sizing: inherit;
+  z-index: 1000;
+  background-color: #d3d3d3;
+}
+
+nav a {
+  text-decoration: inherit;
+  color: #272a31;
+}
+
+nav > a[href="#close"] {
+  align-self: flex-end;
+}
+
+nav > a[href="#close"] img {
+  width: 50px;
+}
+
+nav > ul {
+  flex-direction: column;
+  padding: 0;
+  list-style: none;
+}
+
+nav > ul li {
+  line-height: 3rem;
+}
+
+nav .active {
+  color: #ec5242;
+}
+
+.inactive {
+  position: relative;
+  left: 0;
+  right: unset;
+  width: max-content;
+  height: max-content;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.inactive > ul {
+  display: none;
+}
+
+.history {
+  display: flex;
+  flex-direction: column;
+  padding: 12px;
+  text-align: center;
+}
+
+.history h3 {
+  color: #fff;
+  margin: 0;
+}
+
+.history p {
+  font-size: 0.9rem;
+  color: #fff;
+  margin: 0;
+}
+
+.history #conference-1 {
+  background: linear-gradient(rgba(236, 82, 66, 0.7), rgba(236, 82, 66, 0.7)), url("../images/conference-1.jpg") no-repeat center;
+}
+
+.history #conference-2 {
+  background: linear-gradient(rgba(236, 82, 66, 0.7), rgba(236, 82, 66, 0.7)), url("../images/conference-2.jpg") no-repeat center;
+}
+
+.history .conference-card {
+  background-size: cover;
+  height: 170px;
+  margin: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.compaign {
+  padding: 8px;
+  border: #ec5242 solid 4px;
+}
+
+header {
+  text-align: left;
+  font-size: 1.5rem;
+  line-height: initial;
+  color: #ec5242;
+}
+
+header > p:nth-child(1) {
+  margin-bottom: 0;
+  color: inherit;
+  line-height: inherit;
+}
+
+header > h1 {
+  margin-top: 0;
+  font-size: 3rem;
+  color: inherit;
+  line-height: inherit;
+}
+
+.partners-section {
+  background-color: #272a31;
+}
+
+.partners-section .partner-images {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.partners-section .partner-images img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.partners-section .partner-images figure {
+  width: 33.33%;
+  margin: 0;
+  padding: 0 12px 12px 12px;
+}
+
+.main-program {
+  display: flex;
+  flex-direction: column;
+  background-color: #272a31;
+  color: #fff;
+  background-image: url("../images/about-bg.png");
+}
+
+.main-program .section-header h3 {
+  color: inherit;
+  text-align: center;
+}
+
+.main-program .program-details {
+  display: flex;
+  flex-direction: column;
+  padding: 4px;
+  color: inherit;
+  max-width: 1024px;
+  align-self: center;
+}
+
+.main-program .program-details .program-card {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: rgba(211, 211, 211, 0.1);
+  margin: 8px;
+  color: inherit;
+}
+
+.main-program .program-details .program-card img {
+  width: 50px;
+  color: inherit;
+}
+
+.main-program .program-details .program-card > p {
+  flex: 8;
+  color: inherit;
+}
+
+.main-program .program-details .program-card h4 {
+  color: #ec5242;
+  flex: 2;
+}
+
+.main-program .program-details .program-card * {
+  margin: 8px;
+}
+
+.main-program .program-footer {
+  display: flex;
+  justify-content: center;
+  margin: 1rem;
+}
+
+.main-program .program-footer a {
+  padding: 32px;
+  text-decoration: none;
+  font-size: 1rem;
+  background-color: #ec5242;
+  color: #fff;
+}
+
+.top-section {
+  background-image: url("../images/Eco-Friendly.jpg");
+  background-size: contain;
+  background-color: #d3d3d3;
+  padding: 0;
+}
+
+.top-section > .top-cover {
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 12px;
+}
+
+.top-section > .top-cover .content > p {
+  color: #272a31;
+}
+
+.top-section > .top-cover .content .white-box {
+  border: #d3d3d3 1px solid;
+  background-color: #fff;
+  padding: 12px;
+}
+
+.top-section > .top-cover .content h2 {
+  margin-bottom: 0;
+}
+
+.top-section > .top-cover .content .top-section-desc {
+  font-size: 0.9rem;
+  text-align: center;
+  padding: 0 12px 0 12px;
+  margin-top: 24px;
+}
+
+.top-section > .top-cover .content .top-section-desc * {
+  font-size: inherit;
+  text-align: inherit;
+}
+
+.top-section > .top-cover .content .top-section-desc a {
+  font-weight: bold;
+}
+
+.speakers {
+  display: flex;
+  flex-direction: column;
+  color: #272a31;
+  background-color: #fff;
+}
+
+.speakers .section-header {
+  color: inherit;
+}
+
+.speakers .section-header h3 {
+  color: inherit;
+  text-align: center;
+}
+
+.speakers .speaker-card {
+  display: flex;
+  flex-direction: row;
+  color: inherit;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.speakers .speaker-card .speaker-image {
+  align-self: stretch;
+  padding-left: 1rem;
+  padding-top: 1rem;
+  background-image: url("../images/chess-bg.png");
+  background-position: left top;
+  background-repeat: no-repeat;
+  background-size: 40%;
+}
+
+.speakers .speaker-card .speaker-image img {
+  min-width: 15vw;
+}
+
+.speakers .speaker-card .speaker-card-details {
+  margin-left: 14px;
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+}
+
+.speakers .speaker-card .speaker-card-details h4 {
+  margin: 0;
+  margin-bottom: 4px;
+  color: inherit;
+}
+
+.speakers .speaker-card .speaker-card-details .underline-speakers {
+  height: 1px;
+  background-color: #d3d3d3;
+  width: 24px;
+}
+
+.speakers .speaker-card .speaker-card-details .speker-qualifications {
+  margin-top: 0;
+  color: #ec5242;
+  font-size: 0.7rem;
+}
+
+.speakers .speaker-card .speaker-card-details .speaker-desc {
+  color: inherit;
+  margin-bottom: 0;
+  font-size: 0.7rem;
+  align-self: flex-end;
+}
+
+.speakers #load-more {
+  padding: 8px;
+  color: #272a31;
+  background-color: rgba(255, 255, 255, 0);
+  border: 1px solid #d3d3d3;
+}
+
+.hidden {
+  display: none;
+}
+
+.about header {
+  text-align: center;
+}
+
+.logo {
+  display: none;
+}
+
+.join-summit {
+  display: inline-block;
+}
+
+.program-details-btn {
+  display: none;
+}
+
+.social-links {
+  display: none;
+}
+
+@media screen and (min-width: 992px) {
+  nav {
+    padding: 1rem 15vw 1rem 15vw !important;
+  }
+
+  .content,
+  .conference-Logo {
+    padding: 6rem 15vw 6rem 15vw;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  .content,
+  .conference-Logo {
+    padding: 6rem 5vw 6rem 5vw;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .top-cover {
+    padding-top: 0 !important;
+  }
+
+  .join-summit {
+    display: none;
+  }
+
+  .program-details-btn {
+    display: inline-block;
+  }
+
+  footer figure {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  footer figure img {
+    width: 200px;
+  }
+
+  .section-header {
+    font-size: 2rem;
+    line-height: 4rem;
+  }
+
+  nav {
+    background-color: #fff;
+    position: relative;
+    height: initial;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    padding: 1rem 5vw 1rem 5vw;
+  }
+
+  nav ul {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+  }
+
+  nav ul li {
+    margin: 1rem;
+  }
+
+  nav ul li a {
+    font-size: 1rem;
+  }
+
+  nav .logo {
+    width: 150px;
+    display: initial;
+  }
+
+  nav .logo img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .social-links {
+    background-color: #272a31;
+    display: flex;
+    color: #fff;
+    justify-content: flex-end;
+    padding: 0 5vw;
+  }
+
+  .social-links ul {
+    list-style: none;
+    display: flex;
+    color: inherit;
+    align-items: center;
+    margin: 2px;
+    padding-left: 20px;
+  }
+
+  .social-links ul li {
+    color: inherit;
+    padding: 4px 12px;
+    display: flex;
+    align-items: center;
+  }
+
+  a[href="#close"] {
+    display: none;
+  }
+
+  .program-details {
+    flex-direction: row !important;
+  }
+
+  .program-details .program-card {
+    flex-direction: column !important;
+    padding: 12px;
+    margin: 2px !important;
+  }
+
+  .program-details .program-card h4 {
+    flex: initial !important;
+  }
+
+  .program-details .program-card p {
+    font-size: 0.8rem;
+    text-align: center;
+  }
+
+  .program-footer a {
+    background-color: rgba(211, 211, 211, 0) !important;
+    text-decoration: underline !important;
+  }
+
+  .featured-speakers {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 3rem;
+    column-gap: 3rem;
+    padding: 3rem 5rem 3rem 5rem;
+  }
+
+  .featured-speakers .speaker-card {
+    margin-bottom: 0;
+  }
+
+  .partners-section .partner-images figure {
+    width: 10%;
+  }
+
+  .about .top-cover .content {
+    text-align: center;
+  }
+
+  .history {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .history .conference-card {
+    padding: 12px;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */
