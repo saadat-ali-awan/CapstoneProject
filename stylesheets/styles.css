@@ -3,10 +3,7 @@
   src: url(../../fonts/COCOGOOSELETTERPRESS_TRIAL.ttf);
 }
 
-@font-face {
-  font-family: "Lato";
-  src: url("https://fonts.googleapis.com/css2?family=Lato:wght@400;900&display=swap");
-}
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;900&display=swap');
 
 body {
   box-sizing: border-box;
