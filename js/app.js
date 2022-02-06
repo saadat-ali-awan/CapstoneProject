@@ -108,7 +108,7 @@ window.addEventListener('load', () => {
     elem2.classList.remove('hidden');
   }
 
-  if (window.location.pathname === '/index.html' || window.location.pathname === '/') {
+  if (window.location.pathname === '/index.html' || window.location.pathname === '/' || window.location.pathname === '/CapstoneProject/index.html' || window.location.pathname === '/CapstoneProject/') {
     if (window.innerWidth >= 768) {
       lastLoaded = loadMore(lastLoaded, speakersBox, 6);
     } else {
